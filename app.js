@@ -4,17 +4,11 @@ const path = require('path');
 
 
 // Set default port for express app
-const PORT = process.env.PORT || 4001
+const PORT = process.env.PORT || 9001
 
 const app = express();
 const server = require('http').createServer(app);
 
-
-  //Whenever someone disconnects this piece of code executed
-  socket.on('disconnect', function () {
-    console.log('A user disconnected');
- });
-})
 
 app.use(express.static(__dirname + '/public'));
 app.use(cors());
